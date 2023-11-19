@@ -46,8 +46,60 @@ const Hosting = () => {
               </div>
               <PageBanner pageTitle="Our Projects" />
               <div className="ml-projects-area pt-80 pb-50">
-                {/* Rest of the code */}
-              </div>
+                  <div className="container-fluid">
+                    <div className="row justify-content-center">
+                      <div className="col-lg-3 col-sm-6 col-md-6">
+                          <div className="single-ml-projects-box">
+                              <img src="/images/project1.png" alt="image" />
+
+                              <div className="plus-icon">
+                                  <Link href="https://www.6figure-earner.world/">
+                                      <span></span>
+                                  </Link>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div className="col-lg-3 col-sm-6 col-md-6">
+                          <div className="single-ml-projects-box">
+                              <img src="/images/project2.png" alt="image" />
+
+                              <div className="plus-icon">
+                                  <Link href="https://it-homs.com/ALFARAHEDU/">
+                                      <span></span>
+                                  </Link>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div className="col-lg-3 col-sm-6 col-md-6">
+                          <div className="single-ml-projects-box">
+                              <img src="/images/projec3.png" alt="image" />
+
+                              <div className="plus-icon">
+                                  <Link href="https://details-homs.com/">
+                                      <span></span>
+                                  </Link>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div className="col-lg-3 col-sm-6 col-md-6">
+                        <div className="single-ml-projects-box">
+                            <img src="/images/project4.png" alt="image" />
+
+                            <div className="plus-icon">
+                                <Link href="https://fgstraining.net/">
+                                    <span></span>
+                                </Link>
+                            </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
               <FeedbackStyleTwo />
               <Footer />
             </>
