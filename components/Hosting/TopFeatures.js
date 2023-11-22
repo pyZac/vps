@@ -1,8 +1,10 @@
 import React from 'react';
 import * as Icon from 'react-feather';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 const TopFeatures = () => {
+    const { t } = useTranslation();
     return (
         <>
             <div className="boxes-area hosting-boxes-area">
@@ -15,10 +17,10 @@ const TopFeatures = () => {
                                 </div>
                                 <h3>
                                     <Link href="#">
-                                        Money-back Guarantee
+                                        {t('moneyBack')}
                                     </Link>
                                 </h3>
-                                <p>You can try our services risk-free, knowing that you can get a refund if you're not completely satisfied.</p>
+                                <p>{t('moneyBackSent')}</p>
                             </div>
                         </div>
 
@@ -29,10 +31,10 @@ const TopFeatures = () => {
                                 </div>
                                 <h3>
                                     <Link href="#">
-                                        Big Data Transfer
+                                        {t('bigData')}
                                     </Link>
                                 </h3>
-                                <p>We provide robust infrastructure and high-speed networks to handle the demands of Big Data Transfer.</p>
+                                <p>{t('bigDataSent')}</p>
                             </div>
                         </div>
 
@@ -43,10 +45,10 @@ const TopFeatures = () => {
                                 </div>
                                 <h3>
                                     <Link href="#">
-                                        99.9% Server Uptime
+                                        {t('serverUptime')}
                                     </Link>
                                 </h3>
-                                <p>Our hosting and web design services offer a rock-solid 99.9% Server Uptime guarantee.</p>
+                                <p>{t('serverUptimeSen')}</p>
                             </div>
                         </div>
 
@@ -57,10 +59,10 @@ const TopFeatures = () => {
                                 </div>
                                 <h3>
                                     <Link href="#">
-                                        Live 24/7 Support
+                                        {t('24Support')}
                                     </Link>
                                 </h3>
-                                <p>Our experts will evaluate your web hosting needs as you grow to maximize your hosting experience.</p>
+                                <p>{t('24SupportSent')}</p>
                             </div>
                         </div>
                     </div>

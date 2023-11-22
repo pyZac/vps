@@ -19,13 +19,23 @@ import '@/styles/rtl.css'
 // import '@/styles/colors/pink-style.css'
 // import '@/styles/colors/purple-style.css'  
 
+import { useEffect } from 'react'
 import Layout from '@/components/_App/Layout'
 import { Provider } from 'react-redux'
 import { useStore } from '../store'
+import i18n from 'i18n'
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
     
-    const store = useStore(pageProps.initialReduxState)
+    const store = useStore(pageProps.initialReduxState);
+    const router = useRouter();
+    let selectedLanguage = "";
+
+    useEffect(() => {
+        selectedLanguage = localStorage.getItem("selectedLanguage");
+        i18n.changeLanguage(selectedLanguage); // Set the default locale here
+      }, []);
 
     return (
         <>
@@ -37,3 +47,4 @@ export default function App({ Component, pageProps }) {
         </>
     )
 }
+

@@ -1,15 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 const PricingStyleTwo = () => {
+    const { t } = useTranslation();
     return (
         <>
             <div className="pricing-area pt-80 pb-50 bg-f7fafd">
                 <div className="container">
                     <div className="section-title">
-                        <h2>Choose Your Plan.</h2>
+                        <h2>{t('ChoosePlan')}</h2>
                         <div className="bar"></div>
-                        <p>We have hosting packages for every type of site and every budget, Not sure what's best? Give us a call and we'll help you figure it out.</p>
+                        <p>{t('ChoosePlanSent')}</p>
                     </div>
 
                     <div className="row justify-content-center">
@@ -17,23 +19,23 @@ const PricingStyleTwo = () => {
                             <div className="single-pricing-table">
                                 <div className="pricing-header">
                                     <i className="flaticon-vps"></i>
-                                    <h3>Vps Hosting</h3>
-                                    <h3 style={{color:"#1bc1e1"}}>always with you</h3>
+                                    <h3>{t('SharedHosting')}</h3>
+                                    <h3 style={{color:"#1bc1e1"}}>{t('alwaysWitYou')}</h3>
                                 </div>
                                 
                                 <div className="price">
-                                    <span><sup>$</sup>15.00<span>/y</span></span>
+                                    <span><sup>$</sup>15.00<span>/{t('y')}</span></span>
                                 </div>                                
                                 <div className="pricing-features">
                                     <ul>
                                         <li><i data-feather="check"></i> 150 MB + 150 MB (free)</li>
-                                        <li><i data-feather="check"></i> free domain</li>
-                                        <li><i data-feather="check"></i> hosting discounts</li>
-                                        <li><i data-feather="check"></i> 3 GB Bandwidth</li>
-                                        <li><i data-feather="check"></i> 2 sub-domains</li>
-                                        <li><i data-feather="check"></i> 1 database</li>
-                                        <li><i data-feather="check"></i> 5 E-mail Accounts</li>
-                                        <li><i data-feather="check"></i> 24/7 Support</li>
+                                        <li><i data-feather="check"></i> {t('FreeDomain')}</li>
+                                        <li><i data-feather="check"></i> {t('Discount')}</li>
+                                        <li><i data-feather="check"></i> 3 GB {t('Bandwidth')}</li>
+                                        <li><i data-feather="check"></i> 2 {t('subDomains')}</li>
+                                        <li><i data-feather="check"></i> 1 {t('database')}</li>
+                                        <li><i data-feather="check"></i> 5 {t('mailAccounts')}</li>
+                                        <li><i data-feather="check"></i> 24/7 {t('Support')}</li>
                                     </ul>
                                 </div>                              
                             </div>
@@ -42,23 +44,23 @@ const PricingStyleTwo = () => {
                             <div className="single-pricing-table">
                                 <div className="pricing-header">
                                     <i className="flaticon-vps"></i>
-                                    <h3>Vps Hosting</h3>
-                                    <h3 style={{color:"#1bc1e1"}}>StartUp</h3>
+                                    <h3>{t('SharedHosting')}</h3>
+                                    <h3 style={{color:"#1bc1e1"}}>{t('StartUp')}</h3>
                                 </div>
                                 
                                 <div className="price">
-                                    <span><sup>$</sup>22.5<span>/y</span></span>
+                                    <span><sup>$</sup>22.5<span>/{t('y')}</span></span>
                                 </div>                                
                                 <div className="pricing-features">
                                     <ul>
                                         <li><i data-feather="check"></i> 250 MB + 250 MB (free)</li>
-                                        <li><i data-feather="check"></i> free domain</li>
-                                        <li><i data-feather="check"></i> hosting discounts</li>
-                                        <li><i data-feather="check"></i> 10 GB Bandwidth</li>
-                                        <li><i data-feather="check"></i> 5 sub-domains</li>
-                                        <li><i data-feather="check"></i> 5 database</li>
-                                        <li><i data-feather="check"></i> 10 E-mail Accounts</li>
-                                        <li><i data-feather="check"></i> 24/7 Support</li>
+                                        <li><i data-feather="check"></i> {t('FreeDomain')}</li>
+                                        <li><i data-feather="check"></i> {t('Discount')}</li>
+                                        <li><i data-feather="check"></i> 10 GB {t('Bandwidth')}</li>
+                                        <li><i data-feather="check"></i> 5 {t('subDomains')}</li>
+                                        <li><i data-feather="check"></i> 5 {t('database')}</li>
+                                        <li><i data-feather="check"></i> 10 {t('mailAccounts')}</li>
+                                        <li><i data-feather="check"></i> 24/7 {t('Support')}</li>
                                     </ul>
                                 </div>                              
                             </div>
@@ -67,23 +69,23 @@ const PricingStyleTwo = () => {
                             <div className="single-pricing-table">
                                 <div className="pricing-header">
                                     <i className="flaticon-vps"></i>
-                                    <h3>Vps Hosting</h3>
-                                    <h3 style={{color:"#1bc1e1"}}>Basic</h3>
+                                    <h3>{t('SharedHosting')} </h3>
+                                    <h3 style={{color:"#1bc1e1"}}>{t('Basic')}</h3>
                                 </div>
                                 
                                 <div className="price">
-                                    <span><sup>$</sup>32.5 <span>/y</span></span>
+                                    <span><sup>$</sup>32.5 <span>/{t('y')}</span></span>
                                 </div>                                
                                 <div className="pricing-features">
                                     <ul>
                                         <li><i data-feather="check"></i> 500 MB + 500 MB (free)</li>
-                                        <li><i data-feather="check"></i> free domain</li>
-                                        <li><i data-feather="check"></i> hosting discounts</li>
-                                        <li><i data-feather="check"></i> 30 GB Bandwidth</li>
-                                        <li><i data-feather="check"></i> 10 sub-domains</li>
-                                        <li><i data-feather="check"></i> 10 database</li>
-                                        <li><i data-feather="check"></i> 20 E-mail Accounts</li>
-                                        <li><i data-feather="check"></i> 24/7 Support</li>
+                                        <li><i data-feather="check"></i> {t('FreeDomain')}</li>
+                                        <li><i data-feather="check"></i> {t('Discount')}</li>
+                                        <li><i data-feather="check"></i> 30 GB {t('Bandwidth')}</li>
+                                        <li><i data-feather="check"></i> 10 {t('subDomains')}</li>
+                                        <li><i data-feather="check"></i> 10 {t('database')}</li>
+                                        <li><i data-feather="check"></i> 20 {t('mailAccounts')}</li>
+                                        <li><i data-feather="check"></i> 24/7 {t('Support')}</li>
                                     </ul>
                                 </div>                              
                             </div>
@@ -94,23 +96,23 @@ const PricingStyleTwo = () => {
                             <div className="single-pricing-table">
                                 <div className="pricing-header">
                                     <i className="flaticon-vps"></i>
-                                    <h3>Vps Hosting</h3>
-                                    <h3 style={{color:"#1bc1e1"}}>Bronze Plan</h3>
+                                    <h3>{t('SharedHosting')}</h3>
+                                    <h3 style={{color:"#1bc1e1"}}>{t('Bronze')}</h3>
                                 </div>
                                 
                                 <div className="price">
-                                    <span><sup>$</sup>55.00<span>/y</span></span>
+                                    <span><sup>$</sup>55.00<span>/{t('y')}</span></span>
                                 </div>                                
                                 <div className="pricing-features">
                                     <ul>
                                         <li><i data-feather="check"></i> 1 GB + 1 GB (free)</li>
-                                        <li><i data-feather="check"></i> free domain</li>
-                                        <li><i data-feather="check"></i> hosting discounts</li>
-                                        <li><i data-feather="check"></i> 150 GB Bandwidth</li>
-                                        <li><i data-feather="check"></i> 20 sub-domains</li>
-                                        <li><i data-feather="check"></i> 15 database</li>
-                                        <li><i data-feather="check"></i> 30 E-mail Accounts</li>
-                                        <li><i data-feather="check"></i> 24/7 Support</li>
+                                        <li><i data-feather="check"></i> {t('FreeDomain')}</li>
+                                        <li><i data-feather="check"></i> {t('Discount')}</li>
+                                        <li><i data-feather="check"></i> 150 GB {t('Bandwidth')}</li>
+                                        <li><i data-feather="check"></i> 20 {t('subDomains')}</li>
+                                        <li><i data-feather="check"></i> 15 {t('database')}</li>
+                                        <li><i data-feather="check"></i> 30 {t('mailAccounts')}</li>
+                                        <li><i data-feather="check"></i> 24/7 {t('Support')}</li>
                                     </ul>
                                 </div>                              
                             </div>
@@ -119,23 +121,23 @@ const PricingStyleTwo = () => {
                             <div className="single-pricing-table">
                                 <div className="pricing-header">
                                     <i className="flaticon-vps"></i>
-                                    <h3>Vps Hosting</h3>
-                                    <h3 style={{color:"#1bc1e1"}}>Silver Plan</h3>
+                                    <h3>{t('SharedHosting')}</h3>
+                                    <h3 style={{color:"#1bc1e1"}}>{t('Silver')}</h3>
                                 </div>
                                 
                                 <div className="price">
-                                    <span><sup>$</sup>90.00<span>/y</span></span>
+                                    <span><sup>$</sup>90.00<span>/{t('y')}</span></span>
                                 </div>                                
                                 <div className="pricing-features">
                                     <ul>
                                         <li><i data-feather="check"></i> 2 GB + 2 GB (free)</li>
-                                        <li><i data-feather="check"></i> free domain</li>
-                                        <li><i data-feather="check"></i> hosting discounts</li>
-                                        <li><i data-feather="check"></i> 150 GB Bandwidth</li>
-                                        <li><i data-feather="check"></i> 25 sub-domains</li>
-                                        <li><i data-feather="check"></i> 20 database</li>
-                                        <li><i data-feather="check"></i> 35 E-mail Accounts</li>
-                                        <li><i data-feather="check"></i> 24/7 Support</li>
+                                        <li><i data-feather="check"></i> {t('FreeDomain')}</li>
+                                        <li><i data-feather="check"></i> {t('Discount')}</li>
+                                        <li><i data-feather="check"></i> 150 GB {t('Bandwidth')}</li>
+                                        <li><i data-feather="check"></i> 25 {t('subDomains')}</li>
+                                        <li><i data-feather="check"></i> 20 {t('database')}</li>
+                                        <li><i data-feather="check"></i> 35 {t('mailAccounts')}</li>
+                                        <li><i data-feather="check"></i> 24/7 {t('Support')}</li>
                                     </ul>
                                 </div>                              
                             </div>
@@ -144,23 +146,23 @@ const PricingStyleTwo = () => {
                             <div className="single-pricing-table">
                                 <div className="pricing-header">
                                     <i className="flaticon-vps"></i>
-                                    <h3>Vps Hosting</h3>
-                                    <h3 style={{color:"#1bc1e1"}}>Gold Plan</h3>
+                                    <h3>{t('SharedHosting')}</h3>
+                                    <h3 style={{color:"#1bc1e1"}}>{t('Gold')}</h3>
                                 </div>
                                 
                                 <div className="price">
-                                    <span><sup>$</sup>120 <span>/y</span></span>
+                                    <span><sup>$</sup>120 <span>/{t('y')}</span></span>
                                 </div>                                
                                 <div className="pricing-features">
                                     <ul>
                                         <li><i data-feather="check"></i> 3 GB + 3 GB (free)</li>
-                                        <li><i data-feather="check"></i> free domain</li>
-                                        <li><i data-feather="check"></i> hosting discounts</li>
-                                        <li><i data-feather="check"></i> 200 GB Bandwidth</li>
-                                        <li><i data-feather="check"></i> 30 sub-domains</li>
-                                        <li><i data-feather="check"></i> 30 database</li>
-                                        <li><i data-feather="check"></i> 40 E-mail Accounts</li>
-                                        <li><i data-feather="check"></i> 24/7 Support</li>
+                                        <li><i data-feather="check"></i> {t('FreeDomain')}</li>
+                                        <li><i data-feather="check"></i> {t('Discount')}</li>
+                                        <li><i data-feather="check"></i> 200 GB {t('Bandwidth')}</li>
+                                        <li><i data-feather="check"></i> 30 {t('subDomains')}</li>
+                                        <li><i data-feather="check"></i> 30 {t('database')}</li>
+                                        <li><i data-feather="check"></i> 40 {t('mailAccounts')}</li>
+                                        <li><i data-feather="check"></i> 24/7 {t('Support')}</li>
                                     </ul>
                                 </div>                              
                             </div>

@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 const MainBanner = () => {
+    const { t } = useTranslation();
     return (
         <>
             <div className="hosting-main-banner">
@@ -11,15 +13,15 @@ const MainBanner = () => {
                             <div className="row align-items-center">
                                 <div className="col-lg-6 col-md-12">
                                     <div className="hosting-banner-content">
-                                        <h1>The Best Web Hosting</h1>
+                                        <h1>{t('bestHosting')}</h1>
                                         <ul>
-                                            <li>FREE Domain Name for 1st Year</li>
-                                            <li>FREE SSL Certificate Included</li>
-                                            <li>1-Click Wordpress Install</li>
-                                            <li>24/7 Support</li>
+                                            <li>{t('freeDomain')}</li>
+                                            <li>{t('freeSLL')}</li>
+                                            <li>{t('Wordpress')}</li>
+                                            <li>{t('Supports')}</li>
                                         </ul>
 
-                                        <p>Starting at <span>$25</span> $15/Year</p>
+                                        <p>{t('startingAt')} <spam>$15/{t('year')} </spam>   {t('insteadOf')}<span>$25</span></p>
                                     </div>
                                 </div>
                                 

@@ -1,16 +1,18 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const WhyChoose = () => {
+    const { t } = useTranslation();
     return (
         <>
             <div className="why-choose-us ptb-80 pt-0">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-12">
-                            <div className="section-title">
-                                <h2>Why Choose Us</h2>
+                            <div className="section-title1">
+                                <h2>{t('whyChooseUs')}</h2>
                                 <div className="bar"></div>
-                                <p>We will present to you several points that you must consider carefully to decide if we are the most suitable choice for you.</p>
+                                <p>{t('whyChooseUsSent')}</p>
                             </div>
 
                             <div className="why-choose-us-image">
@@ -47,8 +49,8 @@ const WhyChoose = () => {
                                         <div className="icon">
                                             <i className="flaticon-team"></i>
                                         </div>
-                                        <h3>Proficient & Friendly</h3>
-                                        <p>When you choose our hosting and web design services, you'll receive support from a team that is not only highly skilled and proficient but also friendly and eager to assist you.</p>
+                                        <h3>{t('Proficient&Friendly')}</h3>
+                                        <p>{t('Proficient&FriendlySent')}</p>
                                     </div>
                                 </div>
 
@@ -57,8 +59,8 @@ const WhyChoose = () => {
                                         <div className="icon">
                                             <i className="flaticon-rocket"></i>
                                         </div>
-                                        <h3>Extremely Fast</h3>
-                                        <p>Our infrastructure and technologies are optimized for speed, allowing us to provide hosting and web design services that are extremely fast and responsive.</p>
+                                        <h3>{t('ExtremelyFast')}</h3>
+                                        <p>{t('ExtremelyFastSent')}</p>
                                     </div>
                                 </div>
 
@@ -67,8 +69,8 @@ const WhyChoose = () => {
                                         <div className="icon">
                                             <i className="flaticon-shield"></i>
                                         </div>
-                                        <h3>100% Safe & Security</h3>
-                                        <p>With our hosting and web design solutions, you can rest assured that your website is protected with robust security measures, ensuring 100% safety against threats and vulnerabilities.</p>
+                                        <h3>{t('Safe&Security')}</h3>
+                                        <p>{t('Safe&SecuritySent')}</p>
                                     </div>
                                 </div>
 
@@ -77,8 +79,8 @@ const WhyChoose = () => {
                                         <div className="icon">
                                             <i className="flaticon-diamond"></i>
                                         </div>
-                                        <h3>Top-Rated</h3>
-                                        <p>Experience the difference of our top-rated hosting and web design services, backed by positive reviews and testimonials from satisfied clients.</p>
+                                        <h3>{t('TopRated')}</h3>
+                                        <p>{t('TopRatedSent')}</p>
                                     </div>
                                 </div>
                             </div>

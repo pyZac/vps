@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import * as Icon from "react-feather";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -33,21 +35,21 @@ const Footer = () => {
 
             <div className="col-lg-3 col-md-6">
               <div className="single-footer-widget">
-                <h3>Address</h3>
+                <h3>{t('contactUS')}</h3>
 
                 <ul className="footer-contact-info">
-                  <li>
+                 {/*  <li>
                     <Icon.MapPin />
                     27 Division St, New York, <br /> NY 10002, USA
-                  </li>
+                  </li> */}
                   <li>
                     <Icon.Mail />
-                    Email:{" "}
-                    <a href="mailto:it4infinite@gmail.com">it4infinite@gmail.com</a>
+                    {t('Email')}:{" "}
+                    <a href="mailto:support@it-homs.com">support@it-homs.com</a>
                   </li>
                   <li>
                     <Icon.PhoneCall />
-                    Phone: <a href="tel:321984754">+ (321) 984 754</a>
+                    {t('Phone')}: <a href="tel:+905011166669">+ (905)-011-166-669</a>
                   </li>
                 </ul>
                

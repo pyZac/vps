@@ -737,6 +737,9 @@
 [dir=rtl] .auth-form form .form-label {
   text-align: right;
 }
+[dir=rtl] .section-title1 {
+  text-align: right;
+}
 @media only screen and (max-width: 767px) {
   [dir=rtl] .startp-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
     right: 15px;

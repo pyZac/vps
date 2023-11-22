@@ -9,10 +9,12 @@ import Partner from "@/components/Common/Partner";
 import Footer from "@/components/_App/Footer";
 import PageBanner from '@/components/Common/PageBanner'; 
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 
 
 const Hosting = () => {
     const [showFirstCode, setShowFirstCode] = useState(true);
+    const { t } = useTranslation();
 
     useEffect(() => {
       const timer = setTimeout(() => {
@@ -30,6 +32,9 @@ const Hosting = () => {
             <div>
               <div>
                 <div className="shape1Onle">
+                  <img src="/images/shape2.png" alt="shape" />
+                </div>
+                <div className="shape-text">
                   <img src="/images/shapeHome.png" alt="shape" />
                 </div>
               </div>
@@ -44,7 +49,7 @@ const Hosting = () => {
               <div className="pb-80">
                 <Partner />
               </div>
-              <PageBanner pageTitle="Our Projects" />
+              <PageBanner pageTitle={t('OurProjects')} />
               <div className="ml-projects-area pt-80 pb-50">
                   <div className="container-fluid">
                     <div className="row justify-content-center">
@@ -100,7 +105,7 @@ const Hosting = () => {
                     </div>
                   </div>
                 </div>
-              <FeedbackStyleTwo />
+              {/* <FeedbackStyleTwo /> */}
               <Footer />
             </>
           )}
