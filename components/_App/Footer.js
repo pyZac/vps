@@ -45,7 +45,7 @@ const Footer = () => {
                   <li>
                     <Icon.Mail />
                     {t('Email')}:{" "}
-                    <a href="mailto:support@it-homs.com">support@it-homs.com</a>
+                    <a href="mailto:support@it4infinite.com">support@it-homs.com</a>
                   </li>
                   <li>
                     <Icon.PhoneCall />
@@ -60,7 +60,7 @@ const Footer = () => {
             <div className="col-lg-12 col-md-12">
               <div className="copyright-area">
                 <p>
-                  Copyright &copy; {currentYear} designed by{" "}
+                  Copyright &copy; {currentYear} reserved by{" "}
                   <a href="/" target="_blank">
                   it4infinite
                   </a>
