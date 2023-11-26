@@ -45,7 +45,7 @@ const Footer = () => {
                   <li>
                     <Icon.Mail />
                     {t('Email')}:{" "}
-                    <a href="mailto:support@it4infinite.com">support@it-homs.com</a>
+                    <a href="mailto:support@it4infinite.com">support@it4infinite.com</a>
                   </li>
                   <li>
                     <Icon.PhoneCall />
