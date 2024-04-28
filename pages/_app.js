@@ -1,11 +1,13 @@
-import '@/styles/bootstrap.min.css'
-import 'animate.css'
-import '@/styles/boxicons.min.css'
-import '@/styles/flaticon.css'
-import "@/styles/slick.css"
-import 'react-accessible-accordion/dist/fancy-example.css'
-import "swiper/css";
-import "swiper/css/bundle";
+
+// import '@/styles/bootstrap.min.css'
+// import 'animate.css'
+// import '@/styles/boxicons.min.css'
+// import '@/styles/flaticon.css'
+// import "@/styles/slick.css"
+// import 'react-accessible-accordion/dist/fancy-example.css'
+// import "swiper/css";
+// import "swiper/css/bundle";
+
 
 // Global Style
 import '@/styles/style.css'
