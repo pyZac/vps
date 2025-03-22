@@ -270,6 +270,64 @@ textarea.form-control {
 .btn:hover::after, .btn:hover::before {
   width: 50%;
 }
+/* Telegram Button Styling */
+.telegram-btn {
+    color: #ffffff;
+    background-color: #0088cc;  /* Telegram's blue color */
+    box-shadow: 0 13px 27px 0 rgba(0, 136, 204, 0.25);
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 4px;
+    z-index: 1;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+/* Hover effect for the Telegram Button */
+.telegram-btn:hover, .telegram-btn:focus, .telegram-btn:active {
+    color: #ffffff;
+    background: #006bb3;  /* Darker blue for hover effect */
+    transform: translateY(-5px);
+    box-shadow: 0 13px 27px 0 rgba(0, 107, 179, 0.25);
+}
+
+/* Focus and active states */
+.telegram-btn.focus, .telegram-btn:focus {
+    box-shadow: unset;
+}
+
+.telegram-btn:not(:disabled):not(.disabled).active:focus, 
+.telegram-btn:not(:disabled):not(.disabled):active:focus, 
+.telegram-btn .show > .telegram-btn.dropdown-toggle:focus {
+    box-shadow: unset;
+}
+
+.telegram-btn:not(:disabled):not(.disabled).active, 
+.telegram-btn:not(:disabled):not(.disabled):active, 
+.telegram-btn .show > .telegram-btn.dropdown-toggle {
+    color: #ffffff;
+    background: #006bb3;
+    transform: translateY(-5px);
+    box-shadow: 0 13px 27px 0 rgba(0, 107, 179, 0.25);
+}
+
+.telegram-btn.disabled, .telegram-btn:disabled {
+    color: #ffffff;
+    background-color: #0088cc;
+    box-shadow: 0 13px 27px 0 rgba(0, 136, 204, 0.25);
+    opacity: 1;
+}
+
+.telegram-btn.disabled:hover, 
+.telegram-btn.disabled:focus, 
+.telegram-btn:disabled:hover, 
+.telegram-btn:disabled:focus {
+    background: #006bb3;
+    box-shadow: 0 13px 27px 0 rgba(0, 107, 179, 0.25);
+}
+
 
 /* btn-secondary */
 .btn.btn-secondary {
