@@ -23,12 +23,7 @@ const MainBanner = () => {
 
                                         <p>{t('startingAt')} <spam>$15/{t('year')} </spam>   {t('insteadOf')}<span>$25</span></p>
 
-                                        {/* Add Telegram Button */}
-                                        <div className="telegram-btn-container">
-                                            <Link href="https://t.me/itzzacbot" passHref>
-                                                <a className="btn telegram-btn">{t('chatWithBot')}</a>
-                                            </Link>
-                                        </div>
+
                                     </div>
                                 </div>
                                 
